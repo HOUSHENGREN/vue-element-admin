@@ -373,6 +373,19 @@ export const asyncRoutes = [
   },
 
   {
+    path: '/movingText',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/movingText/index'),
+        name: 'movingTextDemo',
+        meta: { title: 'movingText', icon: 'clipboard' }
+      }
+    ]
+  },
+
+  {
     path: 'external-link',
     component: Layout,
     children: [
